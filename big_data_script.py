@@ -13,7 +13,7 @@ def cli():
 @cli.command()
 @click.option(
     "--query",
-    default="SELECT * FROM default.diamonds LIMIT 2",
+    default="SELECT DISTINCT color FROM default.diamonds",
     help="SQL query to execute",
 )
 def cli_query(query):
